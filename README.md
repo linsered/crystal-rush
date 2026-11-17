@@ -10,6 +10,16 @@
 
 ---
 
+## 🎮 在线试玩
+
+**https://linsered.github.io/crystal-rush/**
+
+打开即玩，无需安装。浏览器版基于 three.js，与 Godot 版共用同一批资产（`assets/models/*.glb`、`assets/textures/*.png`）和同一套玩法规则。
+
+> 为什么要单独做一个网页版：Godot 的 Web 导出需要约 1 GB 的 export templates，本机未安装且当前网络无法下载，因此改用 three.js 复刻了同一玩法，让项目在任何设备上都能直接打开试玩。
+
+---
+
 ## 预览
 
 | 开局 | 收集 1 枚后 |
@@ -85,6 +95,10 @@ game1/
 ├── assets/
 │   ├── models/                # Blender 导出的 GLB（含 .import）
 │   └── textures/              # AI 生成的贴图（含 .import）
+├── web/                       # 网页版（three.js），部署到 gh-pages 的源码
+│   ├── index.html
+│   ├── game.js
+│   └── vendor/                # 本地化的 three.js r160（不依赖 CDN）
 ├── addons/godot_mcp/          # 第三方插件：Godot MCP（用于 AI 协作编辑，跑游戏本身不需要）
 └── docs/                      # 截图与说明
 ```

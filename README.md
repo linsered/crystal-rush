@@ -12,11 +12,15 @@
 
 ## 🎮 在线试玩
 
-**https://linsered.github.io/crystal-rush/**
+| 入口 | 地址 | 说明 |
+|---|---|---|
+| **国内（推荐）** | **https://crystal-rush.app.workbuddy.host/?sharecode=HRDYX5SYOA** | 腾讯云北京节点，加载快 |
+| GitHub Pages | https://linsered.github.io/crystal-rush/ | 海外节点，引擎文件 39 MB 下载较慢 |
+| 轻量版 | 上述地址后加 `three/` | three.js 版，只有 ~5 MB，秒开 |
 
-打开即玩，无需安装。浏览器版基于 three.js，与 Godot 版共用同一批资产（`assets/models/*.glb`、`assets/textures/*.png`）和同一套玩法规则。
+浏览器版是 **Godot 4.7.2 官方 Web 导出**（`web_nothreads_release` 模板，不依赖 COOP/COEP 响应头，可放在任意静态托管上）。
 
-> 为什么要单独做一个网页版：Godot 的 Web 导出需要约 1 GB 的 export templates，本机未安装且当前网络无法下载，因此改用 three.js 复刻了同一玩法，让项目在任何设备上都能直接打开试玩。
+> `/three/` 下是早期用 three.js 手写的等价移植版，资产与玩法相同但体积小得多，网络差时可直接用。
 
 ---
 

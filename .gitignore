@@ -8,9 +8,6 @@ export/
 *.pck
 *.zip
 
-# Godot 导出预设含本地密钥路径，默认不入库
-export_presets.cfg
-
 # 系统文件
 Thumbs.db
 Desktop.ini

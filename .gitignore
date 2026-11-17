@@ -1,0 +1,22 @@
+# Godot 4+ 引擎缓存（必须忽略，可重新生成）
+.godot/
+
+# 导出产物
+build/
+export/
+*.exe
+*.pck
+*.zip
+
+# Godot 导出预设含本地密钥路径，默认不入库
+export_presets.cfg
+
+# 系统文件
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
